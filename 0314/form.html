@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <form action="https://www.google.com/search" method="get">
+      <div>
+        <label>
+          Google 搜尋
+          <input type="text" name="q" />
+        </label>
+      </div>
+      <div>
+        <label for="google-search">控制 Google 搜尋框</label>
+        <input type="text" name="q" id="google-search" />
+      </div>
+      <textarea name="" id="" rows="5" cols="33"></textarea>
+      <input
+        type="email"
+        name=""
+        id=""
+        placeholder="email"
+        readonly
+        value="krystal@gmail.com"
+      />
+      <input type="number" name="" id="" placeholder="number" />
+      <input type="password" name="" id="" placeholder="password" />
+      <input type="tel" name="" id="" placeholder="tel" required />
+      <input type="url" name="" id="" placeholder="url" />
+      <input type="date" name="" id="" min="2025-03-11" value="2025-03-12" />
+      <input type="datetime-local" name="" id="" />
+      <input type="month" name="" id="" />
+      <input type="time" name="" id="" />
+      <input type="week" />
+      <input type="button" value="input 的按鈕" class="default-btn" />
+      <input type="color" name="" id="" />
+      <input type="file" name="" id="" />
+      <input type="range" name="" id="" value="20" step="10" />
+      <input type="search" name="" id="" />
+
+      <div class="radios">
+        <fieldset>
+          <legend>我最喜歡午餐（單選）</legend>
+          <label>
+            <input type="radio" name="lunch" value="燒臘" id="" />
+            燒臘
+          </label>
+          <label>
+            <input type="radio" name="lunch" value="飯卷" id="" checked />
+            飯卷
+          </label>
+          <label>
+            <input type="radio" name="lunch" value="便當" id="" />
+            便當
+          </label>
+          <label>
+            <input type="radio" name="lunch" value="Ｍ" id="" />
+            Ｍ
+          </label>
+        </fieldset>
+      </div>
+
+      <div class="radios">
+        <fieldset>
+          <legend>我喜歡的午餐們（複選）</legend>
+          <label>
+            <input type="checkbox" name="checkbox-lunch" value="燒臘" id="" />
+            燒臘
+          </label>
+          <label>
+            <input type="checkbox" name="checkbox-lunch" value="飯卷" id="" />
+            飯卷
+          </label>
+          <label>
+            <input type="checkbox" name="checkbox-lunch" value="便當" id="" />
+            便當
+          </label>
+          <label>
+            <input type="checkbox" name="checkbox-lunch" value="Ｍ" id="" />
+            Ｍ
+          </label>
+        </fieldset>
+      </div>
+
+      <input type="image" src="../images/bear.webp" alt="" />
+      <input type="submit" value="input 的送出按鈕" />
+      <input type="reset" value="input 清空" />
+      <input type="hidden" name="網紅編號" />
+      <button type="submit">送出按鈕</button>
+      <button type="button">只是按鈕</button>
+      <button type="reset">清空</button>
+
+      <button>
+        按鈕
+        <img src="../images/bear.webp" alt="" />
+      </button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+main {
+  margin: 100px;
+}
+
+span {
+  font-weight: 700;
+  font-style: italic;
+}
+
+mark {
+  background-color: aquamarine;
+}
+
+.bg-pink {
+  background-color: #faa;
+}

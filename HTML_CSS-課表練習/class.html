@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="class.css" />
+    <title>Document</title>
+    <style>
+      /* 斜線的style連結
+        https://jzwang-dev.github.io/TableDiagonal/ */
+      table.diagonal {
+        /* width: 40%; */
+        border-collapse: collapse;
+      }
+
+      table.diagonal th,
+      table.diagonal td {
+        border: 1px solid #050505;
+        background: #ffffff;
+        color: #333333;
+        text-align: center;
+        padding: 5px;
+      }
+
+      table.diagonal th.top-left {
+        background: linear-gradient(
+          to top right,
+          #ffffff 49.5%,
+          #050505 49.5%,
+          #050505 50.5%,
+          #ffffff 50.5%
+        );
+      }
+
+      table.diagonal th.top-left > .col-title {
+        text-align: right;
+      }
+
+      table.diagonal th.top-left > .row-title {
+        text-align: left;
+      }
+      .th_bold {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="diagonal">
+      <caption>
+        課表練習
+      </caption>
+      <thead>
+        <tr>
+          <th class="text_center">授課老師</th>
+          <th class="text_center">時段</th>
+          <th class="text_center">節次</th>
+          <th colspan="2" class="top-left text_center">
+            <div class="col-title">時間</div>
+            <div class="row-title">星期</div>
+          </th>
+          <!-- <th colspan="2" class="diagonal">
+                        <span class="line01">時間</span>
+                        <span class="line02">星期</span>
+                    </th> -->
+          <th class="text_center">一</th>
+          <th class="text_center">二</th>
+          <th class="text_center">三</th>
+          <th class="text_center">四</th>
+          <th class="text_center">五</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th rowspan="15" class="th_bold">
+            <div>
+              【國語】<br />
+              【數學】<br />
+              【社會】<br />
+              【綜合】<br />
+              李昀軒
+            </div>
+            <div>
+              【英語】<br />
+              陳巧慧
+            </div>
+            <div>
+              【自然】<br />
+              蔣良修
+            </div>
+            <div>
+              【美勞】<br />
+              蔡秀婷
+            </div>
+            <div>
+              【音樂】<br />
+              蘇敬堯
+            </div>
+            <div>
+              【體育】<br />
+              林俊良
+            </div>
+            <div>
+              【健康】<br />
+              柯雯婷
+            </div>
+            <div>
+              【電腦】<br />
+              曾瑞城
+            </div>
+            <div>
+              【母語】<br />
+              黃振彬
+            </div>
+          </th>
+          <td rowspan="8">
+            <span>上</span>
+            <br />
+            <span>午</span>
+          </td>
+          <td rowspan="2"></td>
+          <td rowspan="2">07:50-08:00</td>
+          <td rowspan="2">10</td>
+          <td>運動服</td>
+          <td>制服</td>
+          <td>便服</td>
+          <td>運動服</td>
+          <td>制服</td>
+        </tr>
+        <tr>
+          <td colspan="5" class="title_justify">
+            <span>晨</span><span>光</span><span>活</span><span>動</span>
+          </td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>08:00-08:40</td>
+          <td>40</td>
+          <td>戶外朝會</td>
+          <td>室內朝會</td>
+          <td>社會</td>
+          <td>深耕閱讀</td>
+          <td>室內朝會</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>08:45-09:25</td>
+          <td>40</td>
+          <td>數學</td>
+          <td>綜合</td>
+          <td>自然</td>
+          <td>數學</td>
+          <td>數學</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>09:35-10:15</td>
+          <td>40</td>
+          <td>英文</td>
+          <td>綜合</td>
+          <td>自然</td>
+          <td>健康</td>
+          <td>國語</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>10:15-10:35</td>
+          <td>20</td>
+          <td colspan="5" class="title_justify">課間活動</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>10:35-11:15</td>
+          <td>40</td>
+          <td>國語</td>
+          <td>母語</td>
+          <td>數學</td>
+          <td>國語</td>
+          <td>美勞</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>11:25-12:05</td>
+          <td>40</td>
+          <td>國語</td>
+          <td>國語</td>
+          <td>國語</td>
+          <td>英語</td>
+          <td>美勞</td>
+        </tr>
+        <tr>
+          <td rowspan="8">
+            <span>下</span>
+            <br />
+            <span>午</span>
+          </td>
+          <td></td>
+          <td>12:05-12:35</td>
+          <td>30</td>
+          <td colspan="5" class="title_justify">午餐時間</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>12:35-13:20</td>
+          <td>45</td>
+          <td colspan="5" class="title_justify">午間靜息</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>13:30-14:10</td>
+          <td>40</td>
+          <td>綜合</td>
+          <td>英語</td>
+          <td></td>
+          <td>社會</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>14:20-15:00</td>
+          <td>40</td>
+          <td>體育</td>
+          <td>電腦</td>
+          <td></td>
+          <td>音樂</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>15:00-15:20</td>
+          <td>20</td>
+          <td colspan="5" class="title_justify">整潔活動</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>15:20-16:00</td>
+          <td>40</td>
+          <td>自然</td>
+          <td>社會</td>
+          <td></td>
+          <td>體育</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>16:00-16:10</td>
+          <td>10</td>
+          <td colspan="5">放學</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

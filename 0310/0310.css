@@ -1,0 +1,70 @@
+h1 {
+  font-size: 60px;
+}
+
+.title {
+  font-size: 80px;
+  color: red;
+}
+
+.bg-title {
+  background-color: pink;
+}
+
+.login-btn {
+  background-color: #13ab67;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 10px 10px 10px;
+  /* padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px; */
+  width: 100px;
+}
+
+.card {
+  margin-top: 100px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #aaa;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  width: 440px;
+}
+
+.job-title {
+  color: #1654b9;
+}
+
+.company {
+  color: #1654b9;
+}
+
+.pay {
+  color: #ff7800;
+}
+
+.hint {
+  color: #13ab67;
+}
+
+table {
+  border: 1px solid black;
+}
+
+th {
+  border: 1px solid blue;
+}
+
+td {
+  border: 1px solid brown;
+}
+
+.table-pink {
+  background-color: #faa;
+}
+
+.table-purple {
+  background-color: #aaf;
+}

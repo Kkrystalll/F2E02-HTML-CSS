@@ -1,0 +1,20 @@
+form {
+  margin: 100px;
+}
+
+input,
+textarea {
+  border: 1px solid black;
+}
+
+button,
+.default-btn {
+  background-color: #afa;
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+.radios {
+  margin: 100px 0;
+  background-color: #aaf;
+}

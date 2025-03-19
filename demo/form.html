@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <form
+      action="https://docs.google.com/forms/d/e/1FAIpQLSeRMAUDqY6GEPiHotfXZQLvGOQgB1nLfxA_TW-uwlC5vb8CWQ/formResponse"
+      method="post"
+      class="bg-[#F0EBF8] py-10 space-y-5"
+    >
+      <div
+        class="w-1/2 mx-auto border border-gray-300 bg-white rounded-lg overflow-hidden"
+      >
+        <div class="h-2 bg-[#673AB7]"></div>
+        <h1 class="text-3xl">F2E02 表單練習</h1>
+        <p>僅供新尖兵 F2E02 表單切版練習作業</p>
+        <hr />
+        <p class="text-rose-700">* 表示必填問題</p>
+      </div>
+      <div class="w-1/2 mx-auto border border-gray-300 bg-white rounded-lg">
+        <label>
+          姓名
+          <span class="text-rose-700">*</span><br />
+          <input type="text" name="1702755171" class="border nameee" required />
+        </label>
+      </div>
+      <div class="w-1/2 mx-auto border border-gray-300 bg-white rounded-lg">
+        <label>
+          信箱
+          <span class="text-rose-700">*</span>
+          <br />
+          <input type="email" name="749434141" required />
+        </label>
+      </div>
+      <div class="w-1/2 mx-auto border border-gray-300 bg-white rounded-lg">
+        <label>
+          生日<br />
+          <input
+            type="date"
+            name="64302806_year"
+            min="2007-01-01"
+            max="2025-03-14"
+          />
+        </label>
+      </div>
+      <div class="w-1/2 mx-auto border border-gray-300 bg-white rounded-lg">
+        <label>
+          想跟老師說悄悄話<br />
+          <textarea name="secret" id="secret"></textarea>
+        </label>
+      </div>
+      <div class="w-1/2 mx-auto border border-gray-300 bg-white rounded-lg">
+        <fieldset>
+          <legend>喜歡的顏色</legend>
+          <label>
+            <input type="radio" name="1669656715" value="yellow" />
+            黃 </label
+          ><br />
+          <label>
+            <input type="radio" name="1669656715" value="green" />
+            綠 </label
+          ><br />
+          <label>
+            <input type="radio" name="1669656715" value="red" /> 紅 </label
+          ><br />
+        </fieldset>
+      </div>
+      <div class="w-1/2 mx-auto border border-gray-300 bg-white rounded-lg">
+        <fieldset>
+          <legend>喜歡吃的飲食類型</legend>
+          <label>
+            <input type="checkbox" name="1235040329" value="chinese" />
+            中式 </label
+          ><br />
+          <label>
+            <input type="checkbox" name="1235040329" value="italian" />
+            義式 </label
+          ><br />
+          <label>
+            <input type="checkbox" name="1235040329" value="japanese" />
+            日式 </label
+          ><br />
+          <label>
+            <input type="checkbox" name="1235040329" value="korean" />
+            韓式 </label
+          ><br />
+          <label>
+            <input type="checkbox" name="1235040329" value="american" />
+            美式 </label
+          ><br />
+          <label>
+            <input type="checkbox" name="1235040329" value="thai" />
+            泰式 </label
+          ><br />
+        </fieldset>
+      </div>
+      <div class="w-1/2 mx-auto border border-gray-300 bg-white rounded-lg">
+        <label for="destination">最想去的國家：</label><br />
+        <select id="destination" name="1435381962">
+          <optgroup label="亞洲">
+            <option value="japan">日本</option>
+            <option value="south_korea">韓國</option>
+            <option value="thailand">泰國</option>
+          </optgroup>
+          <optgroup label="歐洲">
+            <option value="germany">德國</option>
+            <option value="united_kingdom">英國</option>
+          </optgroup>
+          <optgroup label="北美洲">
+            <option value="canada">加拿大</option>
+            <option value="united_states">美國</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div class="w-1/2 mx-auto">
+        <button
+          type="submit"
+          class="bg-[#673AB7] py-2 px-5 text-white rounded-md"
+        >
+          提交
+        </button>
+        <button type="reset" class="text-[#673AB7]">清除表單</button>
+      </div>
+    </form>
+  </body>
+</html>

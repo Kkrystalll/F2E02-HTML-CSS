@@ -1,0 +1,13 @@
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+th {
+  background-color: #c4e7f5;
+}
+
+.bg-pink{
+  background-color: rgb(236, 206, 211);
+}
