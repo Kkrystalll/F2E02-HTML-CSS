@@ -7,6 +7,18 @@ textarea {
   border: 1px solid black;
 }
 
+progress {
+  background-color: transparent;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #ffa;
+}
+
+progress::-webkit-progress-value {
+  background-color: blue;
+}
+
 button,
 .default-btn {
   background-color: #afa;

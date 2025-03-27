@@ -1,0 +1,12 @@
+main {
+  background-color: rgb(219, 195, 238);
+}
+
+div {
+  background-color: #aaf;
+  width: 50%;
+  max-width: 640px;
+  margin: 0 auto 0 auto;
+  /* color: rgb(92, 13, 13); */
+}
+

@@ -19,15 +19,11 @@
         <label for="google-search">控制 Google 搜尋框</label>
         <input type="text" name="q" id="google-search" />
       </div>
-      <textarea name="" id="" rows="5" cols="33"></textarea>
-      <input
-        type="email"
-        name=""
-        id=""
-        placeholder="email"
-        readonly
-        value="krystal@gmail.com"
-      />
+      <label>
+        心得分享
+        <textarea name="" id="" rows="5" cols="33"></textarea>
+      </label>
+      <input type="email" name="" id="" placeholder="email" />
       <input type="number" name="" id="" placeholder="number" />
       <input type="password" name="" id="" placeholder="password" />
       <input type="tel" name="" id="" placeholder="tel" required />
@@ -51,11 +47,11 @@
             燒臘
           </label>
           <label>
-            <input type="radio" name="lunch" value="飯卷" id="" checked />
+            <input type="radio" name="lunch" value="飯卷" id="" />
             飯卷
           </label>
           <label>
-            <input type="radio" name="lunch" value="便當" id="" />
+            <input type="radio" name="lunch" value="便當" id="" checked />
             便當
           </label>
           <label>
@@ -69,11 +65,23 @@
         <fieldset>
           <legend>我喜歡的午餐們（複選）</legend>
           <label>
-            <input type="checkbox" name="checkbox-lunch" value="燒臘" id="" />
+            <input
+              type="checkbox"
+              name="checkbox-lunch"
+              value="燒臘"
+              id=""
+              checked
+            />
             燒臘
           </label>
           <label>
-            <input type="checkbox" name="checkbox-lunch" value="飯卷" id="" />
+            <input
+              type="checkbox"
+              name="checkbox-lunch"
+              value="飯卷"
+              id=""
+              checked
+            />
             飯卷
           </label>
           <label>
@@ -86,6 +94,27 @@
           </label>
         </fieldset>
       </div>
+
+      <div class="selects">
+        <label for="color">我最喜歡的顏色</label>
+        <select name="" id="color" multiple>
+          <option value="" disabled>請選擇</option>
+          <optgroup label="暖色系">
+            <option value="紅">紅</option>
+            <option value="橙">橙</option>
+            <option value="黃">黃</option>
+          </optgroup>
+          <optgroup label="冷色系">
+            <option value="綠">綠</option>
+            <option value="藍">藍</option>
+            <option value="靛">靛</option>
+            <option value="紫">紫</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <progress max="100" value="70">70%</progress>
+      
 
       <input type="image" src="../images/bear.webp" alt="" />
       <input type="submit" value="input 的送出按鈕" />
