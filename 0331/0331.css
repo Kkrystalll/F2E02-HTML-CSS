@@ -1,0 +1,252 @@
+body {
+  margin: 100px;
+}
+
+section {
+  margin-bottom: 200px;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 120px;
+}
+
+header {
+  height: 80px;
+  background-color: #ffa;
+}
+
+nav {
+  text-align: center;
+}
+
+nav a {
+  line-height: 80px;
+  padding: 32px 20px;
+}
+
+/* 
+.box:first-child {
+  background-color: #ffa;
+} */
+
+/* .box p:first-child {
+  background-color: #aaf;
+} */
+
+/* p:first-child {
+  background-color: #afa;
+} */
+
+/* .box :first-child {
+  background-color: #faa;
+} */
+
+/* .box:last-child {
+  background-color: #ffa;
+} */
+
+/* .box p:last-child {
+  background-color: #aaf;
+} */
+
+/* p:last-child {
+  background-color: #afa;
+} */
+
+/* .box :last-child {
+  background-color: #faa;
+} */
+
+/* .box:first-of-type {
+  background-color: #ffa;
+} */
+
+/* .box p:first-of-type {
+  background-color: #aaf;
+} */
+
+/* p:first-of-type {
+  background-color: #afa;
+} */
+
+/* .box :first-of-type {
+  background-color: #faa;
+} */
+
+/* .box:last-of-type {
+  background-color: #ffa;
+} */
+
+/* .box p:last-of-type {
+  background-color: #aaf;
+} */
+
+/* p:last-of-type {
+  background-color: #afa;
+} */
+
+/* .box :last-of-type {
+  background-color: #faa;
+} */
+
+/* .box p:nth-child(2) {
+  background-color: #ffa;
+}
+
+.box p:nth-of-type(2) {
+  background-color: #ffa;
+} */
+
+/* ul li:nth-of-type(even) {
+  background-color: #f4efef;
+} */
+
+/* ul li:nth-of-type(n) {
+  background-color: #afa;
+} */
+
+/* ul li:nth-of-type(7n) {
+  background-color: #afa;
+} */
+
+/* ul li:nth-of-type(n + 7) {
+  background-color: #afa;
+} */
+
+/* ul li:nth-of-type(-n + 7) {
+  background-color: #afa;
+} */
+
+/* ul li:nth-of-type(3n - 1) {
+  background-color: #afa;
+} */
+
+/* ul li:nth-of-type(even) {
+  background-color: #f4efef;
+}
+
+ul li:nth-of-type(4n - 1) {
+  border: 2px solid #fa0;
+}
+
+ul li:nth-of-type(n + 8) {
+  border-bottom: 4px dotted red;
+} */
+
+/* ul li:nth-of-type(-n - 3) {
+  background-color: aqua;
+} */
+
+/* p {
+  background-color: #ffa;
+} */
+
+/* p:not(.point) {
+  background-color: #ffa;
+} */
+
+/* .box :not(div, span) {
+  background-color: aqua;
+} */
+
+.box :not(div):not(span) {
+  background-color: aqua;
+}
+
+.text-space {
+  letter-spacing: 2px;
+  word-spacing: 30px;
+  direction: rtl;
+}
+
+.text-space span {
+  color: red;
+  vertical-align: top;
+}
+
+.card {
+  background-color: #ffa;
+  overflow: hidden;
+}
+
+.card .card-img {
+  float: left;
+  width: 50%;
+}
+
+.card-img img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.card:nth-of-type(2n) .card-img {
+  float: right;
+}
+
+.card:nth-of-type(2n) .card-content {
+  direction: rtl;
+}
+
+.float-card {
+  background-color: #afa;
+  padding: 20px;
+}
+
+.float-card .card-img {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 50px;
+}
+
+.float-wrap {
+  margin: 100px 0;
+  background-color: #aaa;
+}
+
+.box {
+  width: 200px;
+}
+
+.box:first-child {
+  background-color: #ffa;
+  height: 200px;
+  float: left;
+}
+
+.box2 {
+  background-color: rgb(255, 170, 217);
+  height: 300px;
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.float-post {
+  background-color: pink;
+  width: 600px;
+  padding: 20px;
+  margin: 40px;
+}
+
+.content {
+  text-align: justify;
+}
+
+.float-post .cat {
+  width: 28%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  float: right;
+  margin: 20px 0 20px 20px;
+}
+
+.float-post .bear {
+  width: 28%;
+  float: left;
+  margin: 20px 20px 20px 0;
+}

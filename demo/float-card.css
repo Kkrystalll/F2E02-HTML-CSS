@@ -1,0 +1,27 @@
+.card {
+  overflow: hidden;
+  padding: 20px;
+  background-color: #faa;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+
+.card:nth-of-type(even) .card-content {
+  width: 66%;
+  direction: rtl;
+}
+
+.card-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card:nth-of-type(odd) .card-img {
+  float: left;
+  margin-right: 40px;
+}
+
+.card:nth-of-type(even) .card-img {
+  float: right;
+  margin-left: 40px;
+}

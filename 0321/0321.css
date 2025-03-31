@@ -96,6 +96,15 @@ section {
   border: 2px solid #000;
   float: left;
   width: 230px;
+  /* box-sizing: border-box; */
+}
+
+.product-card + .product-card + .product-card + .product-card {
+  background-color: #aaa;
+}
+
+.product-card img {
+  width: 100%;
 }
 
 .product-title {

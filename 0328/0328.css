@@ -1,0 +1,185 @@
+.news-list {
+  font-size: 20px;
+}
+
+/* .news-list-item {
+  font-family: "Sofia", sans-serif;
+  text-indent: -20px;
+} */
+
+.news-list > li {
+  font-family: "Sofia", sans-serif;
+  background-color: #ffa;
+  text-indent: -20px;
+}
+
+li {
+  background-color: #faf;
+  text-indent: 30px;
+}
+
+span {
+  background-color: aqua;
+}
+
+div > span {
+  background-color: yellow;
+}
+
+.first > div {
+  color: #e11c1c;
+}
+
+.second {
+  font-size: 60px;
+}
+
+/* div {
+  color: #afa;
+} */
+
+.container > p {
+  color: red;
+}
+
+h4 ~ p {
+  color: blue;
+}
+
+h4 + p {
+  color: red;
+}
+
+.info-list {
+  font-size: 30px;
+}
+
+.news-list,
+.info-list {
+  color: rgb(17, 0, 255);
+  margin-left: 200px;
+}
+
+input[type="text"],
+input[type="password"] {
+  border: 1px solid #000;
+}
+
+/* a[class] {
+  background-color: rgb(170, 183, 255);
+} */
+
+.link {
+  background-color: #f6b9b9 !important;
+  color: rgb(128, 255, 0);
+  background-color: #e11c1c;
+}
+
+img[alt~="cute"] {
+  border-radius: 20px;
+}
+
+/* a {
+  color: #412828;
+} */
+
+a#home-link.link {
+  color: aqua;
+}
+
+.first-content {
+  text-indent: 32px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.title + p {
+  text-indent: 32px;
+}
+
+.title ~ p {
+  color: blue;
+}
+
+.border-list {
+  margin: 100px;
+  background-color: #ffa;
+}
+
+.border-list li {
+  border-top: 1px solid #8c6798;
+}
+
+.border-list .border-none {
+  border-top: none;
+}
+
+.list-item + .list-item {
+  border-top: 1px solid #000;
+}
+
+h3 {
+  font-size: 30px;
+  text-decoration: line-through red wavy;
+  color: rgb(217, 69, 69);
+}
+
+div {
+  /* background-color: #e11c1c; */
+  margin-left: 100px;
+}
+
+.box {
+  background-color: #ffa;
+}
+
+#my-box {
+  background-color: #f6b9b9;
+}
+
+div p {
+  color: blue;
+}
+
+body #content .text p {
+  color: red;
+}
+
+#content p {
+  color: green;
+}
+
+.food {
+  background-color: #fa0;
+}
+
+.food:visited {
+  background-color: #aaa;
+  color: #e11c1c;
+}
+
+.food:focus {
+  background-color: #f6b9b9;
+  outline: 2px solid #8c6798;
+}
+
+.food:hover {
+  background-color: #ffa;
+}
+
+.food:active {
+  background-color: #a1d4eb;
+}
+
+label input:focus-visible {
+  outline: 2px solid #8c6798;
+}
+
+.description {
+  background-color: #faa;
+  width: 300px;
+  text-align: justify;
+}
