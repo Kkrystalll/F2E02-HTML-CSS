@@ -1,0 +1,182 @@
+section {
+  max-width: 960px;
+  margin: 50px auto;
+  background-color: #f0f099;
+}
+
+button {
+  font-size: 16px;
+}
+/* 
+span {
+  font-size: 16px;
+  background-color: #faf;
+  width: 100px;
+} */
+
+.box-container {
+  font-size: 0;
+  /* text-align: center; */
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: #afa;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.box:nth-of-type(2) {
+  background-color: #faa;
+  height: 500px;
+  /* visibility: hidden; */
+  /* opacity: 0; */
+}
+
+.box:nth-of-type(3) {
+  height: 100px;
+  background-color: #aaf;
+}
+
+.box-btn {
+  display: block;
+  margin: 0 auto;
+  font-size: 16px;
+  padding: 10px;
+  background-color: #aff;
+}
+
+.hidden {
+  display: none;
+}
+
+.text-content span {
+  color: red;
+  font-size: 30px;
+  display: block;
+}
+
+.card-wrap {
+  display: flex;
+  /* gap: 30px; */
+  column-gap: 30px;
+  row-gap: 10px;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+
+.card {
+  width: 300px;
+  /* height: 300px; */
+  background-color: #afa;
+}
+
+.card:nth-of-type(2) {
+  background-color: #faa;
+}
+
+.card:nth-of-type(3) {
+  background-color: #aaf;
+}
+
+.wrap {
+  max-width: 960px;
+  margin: 50px auto;
+  background-color: #f0f099;
+  display: flex;
+  gap: 20px;
+}
+
+.item {
+  height: 100px;
+  width: 100%;
+  background-color: #faa;
+}
+
+.item::first-letter {
+  font-size: 40px;
+  color: royalblue;
+}
+
+.btn {
+  /* display: block; */
+  background-color: #f0f099;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.ss {
+  display: block;
+  background-color: #afa;
+}
+/* 
+.info-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+} */
+
+.info-card {
+  display: flex;
+  background-color: #bfd299;
+  gap: 20px;
+  padding: 30px;
+  /* margin-bottom: 40px; */
+}
+
+/* .info-card:last-of-type {
+  margin-bottom: 0;
+} */
+
+.info-card + .info-card {
+  margin-top: 40px;
+}
+
+/* .info-card:nth-of-type(even) {
+  flex-direction: row-reverse;
+  text-align: right;
+} */
+
+/* .info-card:nth-of-type(even) .card-img {
+  order: 1;
+} */
+
+.card-img,
+.card-content {
+  width: 50%;
+}
+
+.card-img img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.flex-box-wrap {
+  display: flex;
+  height: 400px;
+  gap: 10px;
+  /* justify-content: end; */
+  /* align-items: end; */
+}
+
+.flex-box {
+  width: 100px;
+  height: 100px;
+  background-color: #fa0;
+}
+
+/* .box2 {
+  align-self: flex-end;
+  order: 10;
+} */
+/* 
+.box1,
+.box3 {
+  order: 1;
+} */
+
+.box3 {
+  margin-left: auto;
+}
