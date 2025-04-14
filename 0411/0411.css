@@ -110,8 +110,8 @@ span {
   display: block;
   background-color: #afa;
 }
-/* 
-.info-wrap {
+
+/* .info-wrap {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -133,10 +133,10 @@ span {
   margin-top: 40px;
 }
 
-/* .info-card:nth-of-type(even) {
+.info-card:nth-of-type(even) {
   flex-direction: row-reverse;
   text-align: right;
-} */
+}
 
 /* .info-card:nth-of-type(even) .card-img {
   order: 1;
@@ -157,12 +157,19 @@ span {
   display: flex;
   height: 400px;
   gap: 10px;
-  /* justify-content: end; */
+  /* justify-content: space-between; */
   /* align-items: end; */
 }
 
+/* .flex {
+  display: flex;
+  gap: 10px;
+} */
+
 .flex-box {
-  width: 100px;
+  /* width: 300px; */
+  flex-basis: 0;
+  flex-grow: 1;
   height: 100px;
   background-color: #fa0;
 }
@@ -178,5 +185,22 @@ span {
 } */
 
 .box3 {
-  margin-left: auto;
+  /* margin-left: auto; */
+}
+
+.box1 {
+  /* flex-grow: 1; */
+}
+
+.box2 {
+  /* flex-grow: 1; */
+}
+
+.box3 {
+  /* flex-grow: 1; */
+}
+
+.house {
+  color: red;
+  font-size: 50px;
 }

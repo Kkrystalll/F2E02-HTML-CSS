@@ -1,0 +1,30 @@
+.list {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #aaa;
+  font-size: 0;
+}
+
+.list li {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #faa;
+  font-size: 50px;
+  text-align: center;
+  margin: 10px;
+}
+
+.list .item20 {
+  background-color: red;
+  /* margin-left: 20px; */
+  position: relative;
+  left: 60px;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.item21 {
+  /* position: relative; */
+  z-index: 2;
+}

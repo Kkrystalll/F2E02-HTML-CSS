@@ -1,0 +1,23 @@
+body {
+  padding-top: 80px;
+}
+
+header {
+  height: 80px;
+  background-color: #ffa;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky-box {
+  position: sticky;
+  top: 80px;
+  background-color: #fa0;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 2px -2px gray;
+  opacity: 0.8;
+}
