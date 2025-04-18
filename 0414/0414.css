@@ -56,6 +56,10 @@ header nav {
   position: relative;
 }
 
+.card:hover {
+  transform: scale(1.2);
+}
+
 .mall {
   position: absolute;
   top: 30px;
