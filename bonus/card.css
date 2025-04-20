@@ -1,0 +1,16 @@
+.container {
+  max-width: 1000px;
+  margin: 100px auto;
+  background-color: #aaa;
+  padding: 0 20px;
+}
+
+.card {
+  padding: 20px;
+  background-color: #ffa;
+}
+
+.card-img img {
+  width: 100%;
+  object-fit: cover;
+}
