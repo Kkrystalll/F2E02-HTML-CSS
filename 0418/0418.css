@@ -25,9 +25,14 @@ section {
   /* justify-self: center; */
   /* align-self: center; */
   /* margin: auto; */
-  grid-column: span 7;
-  grid-row: span 2;
+  /* grid-column: span 7; */
+  /* grid-row: span 2; */
   /* grid-area: 1 / 1 / 1 / 9; */
+  grid-column-start: 2;
+  grid-column-end: span 5;
+  /* grid-row-start: ;
+  grid-row-end: ; */
+  /* grid-column: span 5; */
 }
 
 .item {
