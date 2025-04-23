@@ -15,14 +15,22 @@
     <header>
       <nav>
         <h1>LOGO</h1>
-        <label for="toggle-menu" class="toggle-btn">
+        <label for="toggle-menu" class="toggle-menu-btn">
           <i class="fas fa-bars"></i>
         </label>
         <input type="checkbox" name="" id="toggle-menu" class="toggle-menu" />
-        <ul class="menu-area">
+        <ul class="menu-area" id="menu-area">
           <li class="menu">
             menu
-            <i class="fas fa-sort-down"></i>
+            <label for="toggle-submenu1" class="toggle-submenu-btn">
+              <i class="fas fa-sort-down"></i>
+            </label>
+            <input
+              type="radio"
+              name="submenu-group"
+              id="toggle-submenu1"
+              class="toggle-submenu"
+            />
             <ul class="submenu-area">
               <li class="submenu">subtitle</li>
               <li class="submenu">subtitle</li>
@@ -31,7 +39,15 @@
           </li>
           <li class="menu">
             menu
-            <i class="fas fa-sort-down"></i>
+            <label for="toggle-submenu2" class="toggle-submenu-btn">
+              <i class="fas fa-sort-down"></i>
+            </label>
+            <input
+              type="radio"
+              name="submenu-group"
+              id="toggle-submenu2"
+              class="toggle-submenu"
+            />
             <ul class="submenu-area">
               <li class="submenu">subtitle</li>
               <li class="submenu">subtitle</li>
@@ -40,7 +56,15 @@
           </li>
           <li class="menu">
             menu
-            <i class="fas fa-sort-down"></i>
+            <label for="toggle-submenu3" class="toggle-submenu-btn">
+              <i class="fas fa-sort-down"></i>
+            </label>
+            <input
+              type="radio"
+              name="submenu-group"
+              id="toggle-submenu3"
+              class="toggle-submenu"
+            />
             <ul class="submenu-area">
               <li class="submenu">subtitle</li>
               <li class="submenu">subtitle</li>
@@ -65,7 +89,9 @@
     </section>
 
     <section>
-      <div class="padding-img"></div>
+      <div class="padding-img">
+        <!-- <img src="https://picsum.photos/300/200/?random=10" /> -->
+      </div>
     </section>
   </body>
 </html>

@@ -24,49 +24,90 @@ section {
 }
 
 .toggle-menu:checked + .menu-area {
-  display: block;
+  /* display: block; */
+  left: 0;
+  opacity: 1;
 }
 
 .menu-area {
-  display: none;
+  /* display: none; */
   position: absolute;
   top: 60px;
-  left: 0;
+  left: 100%;
+  /* left: 0; */
   right: 0;
+  opacity: 0;
   background-color: #7b4d90;
-  padding: 0 10px;
+  padding: 0 10px 10px 10px;
+  transition: all 1s ease-in-out;
 }
 
 .menu {
   padding: 0 20px;
   position: relative;
   color: white;
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
 }
 
 .menu + .menu {
   border-top: 1px solid white;
 }
 
+.toggle-submenu-btn {
+  position: absolute;
+  right: 20px;
+}
+
+.toggle-submenu-btn i {
+  transform: translateY(-25%);
+}
+
+.toggle-submenu {
+  display: none;
+}
+
+.toggle-submenu:checked + .submenu-area {
+  display: block;
+}
+
 .submenu-area {
+  display: none;
   background-color: #5a2a71;
 }
 
+.submenu {
+  padding: 0 10px;
+}
+
+.submenu + .submenu {
+  border-top: 1px solid #aaa;
+}
+
+/* header 手機版 */
+/* @media (width < 768px) {
+  .toggle-menu:checked + .menu-area {
+    left: 0;
+    opacity: 1;
+  }
+
+  .menu-area {
+    left: 100%;
+    opacity: 0;
+  }
+} */
+
 /* header 平板以上 */
 @media (min-width: 768px) {
-  .menu-area {
+  #menu-area {
     display: flex;
-  }
-
-  .menu-area {
     position: relative;
     top: 0;
+    left: 0;
+    opacity: 1;
     background-color: #9974aa;
+    padding-bottom: 0px;
   }
 
-  .toggle-btn {
+  .toggle-menu-btn {
     display: none;
   }
 
@@ -80,6 +121,10 @@ section {
 
   .menu:hover .submenu-area {
     display: block;
+  }
+
+  .toggle-submenu-btn {
+    display: none;
   }
 
   .submenu-area {
