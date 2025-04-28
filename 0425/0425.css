@@ -1,0 +1,120 @@
+section {
+  max-width: 1000px;
+  margin: 100px auto;
+  background-color: #aaa;
+}
+
+.loading-box {
+  width: 200px;
+  height: 200px;
+  background-color: #041e37;
+  border: 10px solid #041e37;
+  position: relative;
+}
+
+.bar {
+  width: 60px;
+  height: 60px;
+  background-color: #728ca6;
+  animation: grow 3s infinite;
+}
+
+.bar1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bar2 {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  /* inset: 0;
+  margin: auto; */
+}
+
+.bar3 {
+  position: absolute;
+  /* bottom: 0;
+  right: 0; */
+  top: 120px;
+  left: 120px;
+}
+
+@keyframes grow {
+  0% {
+    width: 60px;
+    height: 60px;
+  }
+
+  25% {
+    width: 100%;
+    height: 60px;
+  }
+
+  50% {
+    width: 60px;
+    height: 60px;
+  }
+
+  75% {
+    width: 60px;
+    height: 100%;
+  }
+
+  100% {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #ffa;
+  animation-name: boxxx;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes boxxx {
+  0% {
+    margin-left: 0;
+    background-color: #00bbff;
+  }
+
+  /* 30%,
+  50% {
+    margin-left: 80%;
+  }
+
+  50% {
+    background-color: #b3ffaa;
+  } */
+
+  100% {
+    margin-left: 100%;
+    background-color: #ff2200;
+  }
+}
+
+.row {
+  text-align: center;
+}
+
+.row > div {
+  /* border: 1px solid red; */
+}
+
+.card-img-top {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.bg-pink {
+  background-color: #faa;
+}
