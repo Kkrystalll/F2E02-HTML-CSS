@@ -1,0 +1,59 @@
+section {
+  max-width: 960px;
+  margin: 100px auto;
+  background-color: #aaa;
+  /* display: flex; */
+}
+
+.img-box {
+  width: 50%;
+  background-color: #fa0;
+  aspect-ratio: 16 / 9;
+}
+
+.img-box img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.ratio-box {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 9 / 16 = 0.5625 = 56.25% */
+  overflow: hidden;
+}
+
+/* padding-top 和 padding-bottom 的百分比
+👉 是根據元素本身的寬度來算的
+
+margin-top 和 margin-bottom 的百分比
+👉 也是根據 寬度 算（雖然你以為是高度） */
+
+.ratio-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box {
+  width: 100%;
+  height: 300px;
+}
+
+.box:first-of-type {
+  background-color: #faa;
+}
+
+.box:last-of-type {
+  background-color: #afa;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    display: flex;
+    gap: 30px;
+  }
+}

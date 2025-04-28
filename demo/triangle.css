@@ -1,0 +1,53 @@
+:root {
+  --default-color: #fa9362;
+  --background-color: Teal;
+}
+
+header {
+  height: 80px;
+  background-color: var(--default-color);
+}
+
+aside {
+  width: 120px;
+  height: calc(100vh - 80px);
+  background-color: #faa;
+}
+
+section {
+  max-width: 960px;
+  margin: 100px auto;
+  background-color: #ffa;
+  padding: 100px 0;
+}
+
+.triangle {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  /* border-top: 10px solid red;
+  border-right: 10px solid blue;
+  border-bottom: 10px solid orange;
+  border-left: 10px solid green; */
+  /* border-top: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid orange;  */
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+
+.aaa {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.hello:hover {
+  border-bottom: 2px solid red;
+}
+
+.hello::before {
+  content: "Hi";
+}
+
+.hello::after {
+  content: "我是ＯＯＯ";
+}

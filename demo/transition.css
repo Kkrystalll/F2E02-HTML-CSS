@@ -1,0 +1,165 @@
+section {
+  margin: 100px auto;
+  max-width: 1600px;
+  background-color: #aaa;
+  padding: 100px;
+}
+
+.box {
+  background-color: #fa0;
+  width: 300px;
+  height: 300px;
+  transition-property: background-color;
+  transition-duration: 2s;
+  transition-delay: 2s;
+}
+
+.box:hover {
+  background-color: black;
+
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-delay: 0s;
+}
+
+.card {
+  width: 300px;
+  padding: 20px;
+  background-color: #be83e6;
+}
+
+.card h1 {
+  margin: 20px 0;
+}
+
+.card-img {
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+
+.card-img img {
+  width: 100%;
+  object-fit: cover;
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+/* .card-img img:hover {
+  transform: scale(1.5);
+} */
+
+/* .card-img img:last-child {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: left 1s ease;
+} */
+
+.card-img img:last-of-type {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: left 1s ease;
+}
+
+/* .card-img:hover img:first-child {
+  transform: translateX(-100%);
+}
+
+.card-img:hover img:last-child {
+  left: 0;
+} */
+
+.card-img:hover img:last-of-type {
+  left: 0;
+}
+
+.card .card-img {
+  width: 100%;
+  height: 200px;
+  /* background-image: url(../images/bear.png);
+  background-size: 100%;
+  background-position: center; */
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+/* .card-img:hover {
+  background-size: 120%;
+} */
+
+.hint {
+  position: absolute;
+  bottom: -44px;
+  left: 0;
+  right: 0;
+  background-color: #fa0;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.card-img:hover .hint {
+  bottom: 0;
+  transition: bottom 1s ease 0.5s;
+}
+
+.container {
+  display: grid;
+  height: 800px;
+  /* grid-template-columns: repeat(10, 100px); */
+  /* grid-template-rows: repeat(3, 100px); */
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  /* grid-template-areas:
+    "A1 A1 . B1"
+    "A1 A1 . B1"
+    "C1 C1 C1 C1"; */
+}
+
+.aa {
+  /* grid-area: A1; */
+  grid-column: 1 / 13;
+  grid-row: 1 / 3;
+  background-color: #faf;
+}
+
+.bb {
+  /* grid-area: B1; */
+  background-color: #afa;
+}
+
+.cc {
+  /* grid-area: C1; */
+  background-color: #aff;
+}
+
+.wrap {
+  padding: 0;
+  width: 1200px;
+  height: 600px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(10, 100px);
+  grid-template-rows: repeat(3, 100px);
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  justify-items: end;
+}
+
+.item {
+  background-color: #faa;
+}
+
+.item:nth-of-type(even) {
+  background-color: #aaf;
+  justify-self: center;
+  align-self: self-end;
+}
